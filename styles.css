@@ -1,0 +1,97 @@
+*{
+    margin: 0px;
+    font-family: 'Figtree', Georgia, serif;
+
+}
+#background-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 100;
+  z-index: -1;
+}
+.nav-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(8, 8, 8, 0)	;
+    padding: 25px 175px;
+}
+.nav-bar > div > img{
+    animation: slide 1s ease-in;
+}
+@keyframes slideright {
+    0% {
+         transform: translateX(700px);
+        }
+    100%{
+        transform: skew(0deg);
+    }
+}
+@keyframes slide {
+    0% {
+         transform: translateX(-700px);
+        }
+    100%{
+        transform: skew(0deg);
+    }
+}
+#nav-li1{
+    animation: slideright 1s ease-in;
+}
+#nav-li2{
+    animation: slideright 1.5s ease-in;
+}
+.nav-bar > div > ul{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    
+}
+.nav-bar > div > ul > li > a{
+    box-shadow: inset 0 0 0 0 #fff;
+    text-decoration: none;
+
+    color: white;
+    font-weight: 400;
+    font-size: 25px;
+    transition: color .5s ease-in-out, box-shadow .5s ease-in-out, scale .3s ease-in-out;
+}
+.nav-bar > div > ul > li > a:hover{
+    color: rgb(255, 0, 0);
+    scale: 200%;
+    box-shadow: inset 200px 0 0 0 #fff;
+}
+.section {
+    background: none;
+    height: 87vh;
+    position: relative;
+    width: 100%;
+  }
+  
+  .section::before {
+    animation: bounce 1s ease infinite;
+    bottom: 2rem;
+    color: #fff;
+    content: '╲╱';
+    font-size: 2rem;
+    height: 4rem;
+    left: 50%;
+    letter-spacing: -1px;
+    line-height: 4rem;
+    margin-left: -3rem;
+    opacity: 0.8;
+    position: absolute;
+    text-align: center;
+    width: 6rem;
+  }
+
+  @keyframes bounce {
+    50% {
+      transform: translateY(-50%);
+    }
+  }
