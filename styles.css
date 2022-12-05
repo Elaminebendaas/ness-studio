@@ -17,8 +17,8 @@
 }
 .nav-bar{
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     background-color: rgba(8, 8, 8, 0);
     height: 100%;
     padding:1.5em;
@@ -48,13 +48,13 @@
 #nav-li2{
     animation: slideright 1.5s ease-in;
 }
-.nav-bar > div > ul{
+.nav-bar > div > div > ul{
     display: flex;
     gap: 40px;
     list-style: none;
     
 }
-.nav-bar > div > ul > li > a{
+.nav-bar > div > div > ul > li > a{
     box-shadow: inset 0 0 0 0 #fff;
     text-decoration: none;
 
@@ -63,7 +63,7 @@
     font-size: 25px;
     transition: color .5s ease-in-out, box-shadow .5s ease-in-out, scale .3s ease-in-out;
 }
-.nav-bar > div > ul > li > a:hover{
+.nav-bar > div > div > ul > li > a:hover{
     color: rgb(255, 0, 0);
     scale: 200%;
     box-shadow: inset 200px 0 0 0 #fff;
@@ -98,8 +98,7 @@
     }
   }
 .sidebar-toggle {
-
-    top: 2rem;
+    top: 5rem;
     right: 3rem;
     font-size: 2rem;
     color: white;
@@ -108,21 +107,21 @@
     font-weight: bold;
     transform: translate(100%);
 
+
 }
 .sidebar-toggle:hover {
     color: red;
 }
 .sidebar-toggle-close{
 
-    transform: translate(20%);
+    transform: translate(900%);
 }
 .sidebar-toggle-open{
 
     transform: translateX(0%);
 }
 .sidebar {
-
-    top: 2.3rem;
+    top: 0;
     left: 7rem   ;
     width: 100%;
     height: 100%;
@@ -133,4 +132,9 @@
 }
 .show-sidebar {
     transform: translate(0%);
+}
+.end-bar{
+    display: flex;
+    align-content: center;
+    align-items: center;
 }
